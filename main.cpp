@@ -13,13 +13,22 @@ int main(int argc, char** argv)
 	{
 	cout<<"Podaj b"<<endl;
 	cin>>b;
-
+    
 	funkcja=b/-(a*x);
 	cout<<funkcja;	
     }
        else
     {
-	cout<<"Brak mozliwosci wykonania zadania"<<endl;
+    cout<<"Podaj b"<<endl;
+	cin>>b;
+	if (b!=0)
+	{
+		cout<<"Istnieje nieskonczenie wiele miejsc zerowych";
+	}
+	else
+	{
+		cout<<"Brak miejsc zerowych";
+	}
     }
 	return 0;
 }
